@@ -47,6 +47,7 @@ function getErrorMessage(status) {
     }
 }
 
+//Funktion för att hantera error om det finns
 async function safeLoad(fn) {
      try {
           return await fn();

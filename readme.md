@@ -30,5 +30,10 @@ Funktionaliteter
      - filtrera efter genre
      - error meddelande
 
+Genomgående logik (exempelvis för att visa 10 populära filmer):
+     - main.js: anropar loadPopularMovies()
+     - api.js: loadPopularMovies() -> fetchUrl() -> displayPopularMovies()
+     - movieUi.js: displayPopularMovies() -> createMovieCard()
+
 
 Webbsida skapad av Bea Thanyalak Phulonkaew

@@ -7,12 +7,14 @@ import { Person } from "./modules/personClass.js";
 //Används för att sortera filmer
 let currentMovies = [];
 
+//Visa error
 function showError(message) {
     const errorBox = document.querySelector('.error');
     errorBox.textContent = message;
     errorBox.classList.add('show');
 }
 
+//Knapp för att välja se filmer eller personer
 function viewToggle() {
      const mButton = document.querySelector('.showMovies');
      const pButton = document.querySelector('.showPersons');
