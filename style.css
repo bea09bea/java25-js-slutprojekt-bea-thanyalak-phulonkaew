@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    box-sizing: border-box;
+
+    --objectCard-background: rgb(26, 25, 25);
+    --Webb-title-light-blue: rgb(3, 28, 173);
+    --Webb-title-blue: rgb(1, 15, 97);
+    --Webb-title-purple: rgb(119, 11, 125);
+}
+
+body {
+     background-color: black;
+     background: linear-gradient(to bottom, black, var(--Webb-title-blue));
+     padding-bottom: 100px;
+}
+
+.no-show {
+     display: none !important;
+}
+
+.error {
+     background-color: red;
+     color: black;
+}
+
+header {
+     display: flex;
+     justify-content: space-between;
+}
+
+header > h1 {
+     color: white;
+     margin: 25px 50px 75px 200px;     
+     font-size: 80px;
+     background: linear-gradient(to right, var(--Webb-title-light-blue), var(--Webb-title-purple));
+     -webkit-background-clip: text;
+     background-clip: text;
+     color: transparent;
+}
+
+.viewBtn {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     gap: 300px;
+}
+
+.showMovies, .showPersons {
+     height: 40px;
+     width: 200px;
+     background-color: white;
+     font-size: 20px;
+     font-weight: bolder;
+     border-radius: 10px;
+}
+
+.showMovies:hover, .showPersons:hover {
+     background-color: var(--Webb-title-blue);
+     cursor: pointer;
+     color: white;
+}
+
+h2 {
+     color: white;
+     margin-bottom: 10px;
+}
+
+#searchBar {
+     border-radius: 10px;
+     margin: 50px 10px 0px 100px;     
+     height: 40px;
+     width: 550px;
+     padding: 10px;
+     font-size: 30px;
+     border-color: blue;
+     color: blue;
+}
+
+#searchForm > button {
+     height: 40px;
+     width: 100px;
+     margin-right: 100px;
+     border-radius: 10px;
+     font-size: 20px;
+}
+
+#movie-view h2, #person-view h2 {
+     color: white;
+     margin-bottom: 10px;
+     font-size: 30px;
+}
+
+.person-view {
+     display: flex;
+     flex-direction: column;
+     margin: 30px;
+}
+
+.popularContainer, .topTenContainer {
+     display: flex;
+     flex-direction: column;
+     margin: 30px;
+     margin-bottom: 50px;
+}
+
+.movie-card, .personCard {
+     display: flex;
+     flex-direction: column;
+     background-color: rgb(26, 25, 25);
+     margin-right: 25px;
+}
+
+.movie-card > img, .personCard > img {
+     width: 200px;
+}
+
+.movie-card > div{
+     display: flex;
+}
+
+.movie-card > div > p, .movie-card > p, .personCard p {
+     color: white;
+     margin: 5px;
+     font-size: 20px;
+}
+
+.person-container {
+     display: flex;
+}
+
+.personCard > p:first-of-type {
+     font-weight: bolder;
+}
+
+#knownFor {
+     margin-bottom: 0px;
+     color: white;
+     margin: 5px;
+     font-size: 20px;
+}
+
+ul {
+     margin: 0px;
+}
+
+li {
+     color: white;
+     margin-top: 0px;
+     margin: 5px;
+     margin-left: 20px;
+     font-size: 20px;
+}
+
+.movie-card > a, .personCard > a {
+     color: grey;
+     cursor: pointer;
+     text-decoration: none;
+     font-size: 20px;
+     margin: 5px;
+}
+
+.movie-card > a:hover, .personCard > a:hover {
+     color: white;
+}
+
+.topTen {
+     display: flex;
+}
+
+.popular {
+     display: flex;
+}
+
+.dropdown {
+     position: relative;
+     display: inline-block;
+}
+
+.dropdown-btn {
+     background-color: black;
+     height: 50px;
+     width: 200px;
+     cursor: pointer;
+     font-size: 25px;
+     border-radius: 10px;
+     color: white;
+}
+
+.dropdown-btn:hover {
+     background-color: var(--Webb-title-purple);
+     color: black;
+}
+
+.dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: white;
+     min-width: 200px;
+     border: 1px solid black;
+     z-index: 1;
+}
+
+.dropdown-content.show {
+     display: block;
+}
+
+.dropdown-content div {
+     color: black;
+     padding: 12px 16px;
+     display: block;
+     cursor: pointer;
+}
+
+.dropdown-content div:hover {
+     background-color: gray;
+}
+
+.show {
+     display: block;
+}
+
+.borderBtn {
+     border-radius: 10px 10px 0px 0px;
+}
+
+form > button {
+     cursor: pointer;
+}
+
+form > button:hover {
+     background-color: var(--Webb-title-blue);
+     color: white;
+}
+
+#search-view {
+     display: flex;
+     flex-direction: column;
+     margin-top: 100px;
+}
+
+.filter > h2 {
+     margin-left: 50px;
+}
+
+.filter {
+     display: flex;
+     flex-direction: row;
+     gap: 40px;
+}
+
+select {
+     background-color: black;
+     color: white;
+     border-radius: 10px;
+     padding: 10px;
+     font-size: 20px;
+     font-weight: 300;
+     cursor: pointer;
+}
+
+.search-content {
+     display: flex;
+     flex-direction: column;
+}
+
+.search-content > h2 {
+     margin-left: 50px;
+
+}
+
+.search-nav {
+     display: flex;
+}
+
+.movieContainer, .personContainer {
+     display: flex;
+     margin: 50px;
+     margin-top: 10px;
+}

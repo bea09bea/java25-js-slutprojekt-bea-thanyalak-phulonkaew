@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>CineRate - gammal</title>
+     <link rel="stylesheet" href="./style.css">
+     <script src="./main.js" type="module" defer></script>
+</head>
+<body>
+     <div class="error"></div>
+     <header>
+          <h1>CineRate</h1>
+          <form id="searchForm">
+               <input type="text" id="searchBar" placeholder="Search movies or persons" />
+               <button type="submit">Search</button>
+          </form>
+     </header>
+
+     <div class="viewBtn">
+          <button class="showMovies">Movies</button>
+          <button class="showPersons">Persons</button>
+     </div>
+
+     <div class="movie-view">
+          <div class="popularContainer">
+               <h2>10 Popular movies</h2>
+          </div>
+
+          <div class="topTenContainer">
+               <h2>Top 10 movies</h2>
+          </div>
+     </div>
+
+     <div class="person-view">
+          <h2>10 Popular persons</h2>
+          <div class="person-container">
+          </div>
+     </div>
+
+     <div id="search-view">
+          <div class="filter">
+               <h2>Filter for movies: </h2>
+               <div class="dropdown">
+                    <button class="dropdown-btn">Choose genre</button>
+                    <div class="dropdown-content"></div>
+               </div>
+               <select name="sort" id="sortMovies">
+                    <option value="alpha-asc">A -> Z</option>
+                    <option value="alpha-desc">Z -> A</option>
+                    <option value="score-asc">Score: Low -> High</option>
+                    <option value="score-desc">Score: High -> Low</option>
+               </select>
+          </div>
+          <div class="search-content"></div>
+     </div>
+
+</body>
+</html>
