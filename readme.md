@@ -7,33 +7,33 @@ Struktur för projekt filer & mappar:
 - style.css: css för index.html
 
 module
-     - api.js: hämtar data från api med GET-förfrågan & hanterar error (statuskoder, nätverksfel, fetch-fel)
-     - movieClass.js: objektorienterad klass som omvandlar rå API-data till Movie-objekt
-     - personClass.js: objektorienterad klass som omvandlar rå API-data till Person-objekt
-     - movieUi.js: skapar element för funktioner som hämtar data för filmer
-     - personUi.js: skapar element för funktioner som hämtar data för person 
+- api.js: hämtar data från api med GET-förfrågan & hanterar error (statuskoder, nätverksfel, fetch-fel)
+- movieClass.js: objektorienterad klass som omvandlar rå API-data till Movie-objekt
+- personClass.js: objektorienterad klass som omvandlar rå API-data till Person-objekt
+- movieUi.js: skapar element för funktioner som hämtar data för filmer
+- personUi.js: skapar element för funktioner som hämtar data för person 
 
 detail
-     - detail.html: htlm grund för detalj vy för både person & film
-     - style.css: css för bara detail.html
-     - movieDetail.js: använder data från api och visar på webbsidan
-     - personDetail.js: använder data från api och visar på webbsidan
+- detail.html: htlm grund för detalj vy för både person & film
+- style.css: css för bara detail.html
+- movieDetail.js: använder data från api och visar på webbsidan
+- personDetail.js: använder data från api och visar på webbsidan
 
 
 Funktionaliteter
-     - söka film & person
-     - se lista med populära filmer & personer
-     - se lista med top 10 rankade filmer
-     - välja att se bara filmer eller bara personer
-     - se mer information om person & film
-     - sortera filmer efter alfabetisk ordning & rankning
-     - filtrera efter genre
-     - error meddelande
+- söka film & person
+- se lista med populära filmer & personer
+- se lista med top 10 rankade filmer
+- välja att se bara filmer eller bara personer
+- se mer information om person & film
+- sortera filmer efter alfabetisk ordning & rankning
+- filtrera efter genre
+- error meddelande
 
 Genomgående logik (exempelvis för att visa 10 populära filmer):
-     - main.js: anropar loadPopularMovies()
-     - api.js: loadPopularMovies() -> fetchUrl() -> displayPopularMovies()
-     - movieUi.js: displayPopularMovies() -> createMovieCard()
+- main.js: anropar loadPopularMovies()
+- api.js: loadPopularMovies() -> fetchUrl() -> displayPopularMovies()
+- movieUi.js: displayPopularMovies() -> createMovieCard()
 
 
 Webbsida skapad av Bea Thanyalak Phulonkaew
